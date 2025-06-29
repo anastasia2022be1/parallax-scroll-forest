@@ -21,19 +21,19 @@ function windowLoad() {
         const rawPosition = scrollY / (contentElement.offsetTop - windowHeight) * baseMultiplier;
         const finalPosition = Math.min(rawPosition / speedFactor, 100);
 
-        // Горы
+        // Mountains
         const mountainsTranslate = 170 / 100 * finalPosition;
         const mountainsScale = 1 + 2 / 100 * finalPosition;
         mountains.style.transform = `translate3d(0, ${mountainsTranslate}%, 0) scale(${mountainsScale})`;
 
-        // Деревья
+        // Trees
         trees.forEach((tree, index) => {
             const treeTranslate = 20 * (trees.length - index) / 100 * finalPosition;
             const treeScale = 1 + 1.5 / 100 * finalPosition;
             tree.style.transform = `translate3d(0, ${treeTranslate}%, 0) scale(${treeScale})`;
         });
 
-        // Птицы
+        // Birds
         const birdsTranslate = 190 / 100 * finalPosition;
         const birdsScale = 1 + 2 / 100 * finalPosition;
         birds[0].style.transform = `translate3d(-${birdsTranslate}%, 0, 0) scale(${birdsScale})`;
@@ -53,9 +53,8 @@ function windowLoad() {
         }
     }
 
-    // Первоначальное обновление
     updateAnimation(window.scrollY);
 
-    // Плавная анимация при скролле
+    // Smooth animation on scroll
     window.addEventListener('scroll', onScroll);
 }
