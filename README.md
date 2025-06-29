@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-👉 [View Live Demo](https://your-live-demo-url.com)
+👉 [View Live Demo](https://anastasia2022be1.github.io/parallax-scroll-forest/)
 
 ## Features
 
@@ -18,6 +18,8 @@
 ## How It Works
 
 As the user scrolls down, JavaScript calculates a `finalPosition` value depending on the scroll position and screen height. This value determines how each layer transforms using `translate3d` and `scale`. The animation is smooth and efficient thanks to `requestAnimationFrame`.
+
+Instead of triggering updates directly inside the scroll event, the project uses requestAnimationFrame() for optimized and fluid animations. This ensures the animations remain synchronized with the browser’s refresh rate and are less likely to stutter during rapid scrolling.
 
 ## Use Cases
 
