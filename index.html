@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Forest Parallax</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Main screen-->
+      <main class="page">
+        <div class="page__main-screen main-screen">
+          <!-- Trees -->
+          <div class="main-screen__trees main-screen__trees_6">
+            <span></span>
+          </div>
+          <div class="main-screen__trees main-screen__trees_5">
+            <span></span>
+          </div>
+          <div class="main-screen__trees main-screen__trees_4">
+            <span></span>
+          </div>
+          <div class="main-screen__trees main-screen__trees_3">
+            <span></span>
+          </div>
+          <div class="main-screen__trees main-screen__trees_2">
+            <span></span>
+          </div>
+          <div class="main-screen__trees main-screen__trees_1">
+            <span></span>
+          </div>
+
+          <!-- Birds -->
+          <div class="main-screen__birds main-screen__birds_1">
+            <span></span>
+          </div>
+          <div class="main-screen__birds main-screen__birds_2">
+            <span></span>
+          </div>
+
+          <!-- Mountains -->
+          <div class="main-screen__mountains"><span></span></div>
+        </div>
+        <!-- Content -->
+        <section class="page__content content">
+          <div class="content__container">
+            <h1 class="content__title">Forest Parallax</h1>
+            <div class="content__body">
+              <p>
+                <strong>Forest Parallax</strong> is a modern scrolling animation
+                that demonstrates how to create a depth illusion using only
+                HTML, CSS, and JavaScript — no frameworks or external libraries
+                involved.
+              </p>
+
+              <p>
+                The page includes layered visuals: distant mountains, multiple tree
+                levels, and birds flying in the foreground. Each element moves
+                at a different speed, making the scene feel immersive.
+              </p>
+
+              <p>
+                The project uses scroll-based motion, calculated dynamically
+                based on your screen size. The effect stays consistent across
+                large desktops and smaller mobile devices thanks to adaptive
+                scaling logic.
+              </p>
+
+              <p>
+                To ensure smooth performance, the animations are optimized using
+                <code>requestAnimationFrame</code>. This method aligns layer
+                movements with the browser’s refresh cycle, preventing lags or
+                jittery transitions.
+              </p>
+
+              <p>
+                Each forest layer is built using a
+                <code>&lt;div&gt;</code> element with a unique background image.
+                The transformation logic includes <code>translate3d</code> and
+                <code>scale()</code>, making each layer not only move but also
+                subtly grow or shrink to enhance the illusion of depth.
+              </p>
+
+              <p>
+                Upon page load, a soft animation is triggered: trees slide in
+                from below, and birds fly in from the sides. This creates a
+                welcoming entrance effect and makes the interface feel alive
+                from the very beginning.
+              </p>
+
+              <p>
+                The design is fully responsive. All measurements are made using
+                relative units like percentages and viewport values. The layers
+                keep their proportions and behavior on any device size or screen
+                ratio.
+              </p>
+
+              <p>
+                This parallax effect can be reused in portfolios, landing pages,
+                or storytelling sites. It’s lightweight, educational, and a good
+                starting point for experimenting with scroll-based
+                interactivity.
+              </p>
+
+              <p>
+                The project follows a simple and clear file structure,
+                separating HTML, CSS, JavaScript, and images into dedicated
+                folders. It's easy to clone, edit, and expand.
+              </p>
+
+              <p>
+                💻 <strong>Source Code:</strong>
+                <a
+                  href="https://github.com/your-username/forest-parallax"
+                  target="_blank"
+                  >GitHub Repository</a
+                >
+              </p>
+
+              <p>Enjoy the scroll! 🌲</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/requestAnimationFrame.js"></script>
+  </body>
+</html>
