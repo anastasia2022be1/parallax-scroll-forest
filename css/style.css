@@ -121,6 +121,7 @@ body {
 
 .content {
     padding-top: 200vh;
+    padding-bottom: 50vh;
 }
 
 .content__container {
